@@ -1,0 +1,25 @@
+app-city{
+    height:100%;
+    width:100%;
+    margin: 0px;
+    bottom:0;
+    left:0;
+    right:0;
+    position : fixed; 
+    background-image: url("../assets/images/clouds.jpg");
+}
+app-footer{
+    
+    
+        font-size:12px;
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        background-color: black;
+        color:white;
+        position:fixed;
+        left:0px;
+        bottom:0px;
+        height:30px;
+        width:100%;     
+ }

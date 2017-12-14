@@ -1,0 +1,37 @@
+
+
+
+<form #f="ngForm" class="form-inline">
+    <div class="col-xs-3">
+  <input type="text" name="c" #city="ngModel"  placeholder="enter city" ngModel class="form-control" >
+  <button (click)="sub(city.value)" class="btn btn-success">Submit</button>
+    </div>
+  </form>
+  
+   <table *ngIf="stat" border=2px class="table">
+      <tr>
+      <th>City Name</th> 
+      <th>Tempertaure</th>
+      <th>Pressure</th>
+      <th>Humidity</th>
+      <th>Maximum Temperature</th>
+      <th>Minimum Temperature</th>
+      <th>Longitude</th>
+      <th>Lattitude</th>
+      <th>Weather Description</th>
+      <th>Wind Speed</th>
+  </tr>
+      <tr>
+          <td>{{a?.name}}</td>
+           <td>{{b?.temp}}</td> 
+          <td>{{b?.pressure}}</td>
+          <td>{{b?.humidity}}</td>
+          <td>{{b?.temp_max}}</td>
+          <td>{{b?.temp_min}}</td>
+          <td>{{a?.coord.lon}}</td>
+          <td>{{a?.coord.lat}}</td>
+          <td>{{a?.weather[0].description}}</td>
+          <td>{{a?.wind.speed}}</td>
+          
+          </tr>
+  </table> 
